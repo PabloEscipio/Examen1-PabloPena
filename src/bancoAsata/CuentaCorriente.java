@@ -9,14 +9,14 @@ public class CuentaCorriente {
     private static int numCuenta;
 
     // Constructor
-    public CuentaCorriente(Persona pTitular) {
-        this.titular = pTitular;
+    public CuentaCorriente(String pNombre, String pDNI, short pAñoNacimiento) {
+        this.titular = new Persona(pNombre, pDNI, pAñoNacimiento);
         this.saldo = 0;
         this.limite = 100;
     }
 
-    public CuentaCorriente(Persona pTitular, double pSaldo) {
-        this.titular = pTitular;
+    public CuentaCorriente(String pNombre, String pDNI, short pAñoNacimiento, double pSaldo) {
+        this.titular = new Persona(pNombre, pDNI, pAñoNacimiento);
         this.saldo = pSaldo;
         this.limite = 200;
     }
@@ -40,6 +40,31 @@ public class CuentaCorriente {
     public String toString() {
         return titular.toString() + "\nSaldo: " + this.saldo;
     }
-    // Metodos
 
+    // Metodos
+    public void sacarDinero(double pCantidad) {
+        if (this.saldo - pCantidad >= (-this.limite)) {
+            this.saldo -= pCantidad;
+        }
+    }
+
+    public void ingresarDinero(double pCantidad) {
+        if (pCantidad > 3) {
+            this.saldo += pCantidad - 3;
+        }
+    }
+
+    public void bizum50() {
+        for (int i = 0; i < 10; i++) {
+            this.saldo -= 5;
+        }
+    }
+
+    public void comision() {
+        this.saldo *= 0.95;
+    }
+
+    public void intereses() {
+        this.saldo *= 1.03;
+    }
 } // class end

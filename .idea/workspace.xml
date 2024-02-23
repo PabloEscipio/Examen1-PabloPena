@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33735c1d-7099-4b59-8414-7eab55b2e7ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Examen1-PabloPena.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bancoAsata/CuentaCorriente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bancoAsata/Persona.java" afterDir="false" />
+    <list default="true" id="33735c1d-7099-4b59-8414-7eab55b2e7ce" name="Changes" comment="1º">
+      <change afterPath="$PROJECT_DIR$/src/bancoAsata/BancoAsata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bancoAsata/CuentaCorriente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bancoAsata/CuentaCorriente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +61,30 @@
       <option name="presentableId" value="Default" />
       <updated>1708702173813</updated>
     </task>
+    <task id="LOCAL-00001" summary="1º">
+      <option name="closed" value="true" />
+      <created>1708704285793</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708704285793</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1º" />
+    <option name="LAST_COMMIT_MESSAGE" value="1º" />
   </component>
 </project>
