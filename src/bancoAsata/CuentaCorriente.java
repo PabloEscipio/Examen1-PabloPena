@@ -5,24 +5,29 @@ public class CuentaCorriente {
     private Persona titular;
     private double saldo;
     private double limite;
-    private static double saldoBanco;
-    private static int numCuenta;
+    public static double saldoBanco = 0;
+    public static int numCuenta = 0;
 
     // Constructor
     public CuentaCorriente(String pNombre, String pDNI, short pAñoNacimiento) {
         this.titular = new Persona(pNombre, pDNI, pAñoNacimiento);
         this.saldo = 0;
         this.limite = 100;
+        numCuenta++;
     }
 
     public CuentaCorriente(String pNombre, String pDNI, short pAñoNacimiento, double pSaldo) {
         this.titular = new Persona(pNombre, pDNI, pAñoNacimiento);
         this.saldo = pSaldo;
         this.limite = 200;
+        numCuenta++;
+        saldoBanco += pSaldo;
     }
 
     // Getters & Setters
-
+    public Persona getTitular() {
+        return titular;
+    }
 
     public double getSaldo() {
         return saldo;
@@ -45,18 +50,21 @@ public class CuentaCorriente {
     public void sacarDinero(double pCantidad) {
         if (this.saldo - pCantidad >= (-this.limite)) {
             this.saldo -= pCantidad;
+            saldoBanco -= pCantidad;
         }
     }
 
     public void ingresarDinero(double pCantidad) {
         if (pCantidad > 3) {
             this.saldo += pCantidad - 3;
+            saldoBanco += pCantidad;
         }
     }
 
     public void bizum50() {
         for (int i = 0; i < 10; i++) {
             this.saldo -= 5;
+            saldoBanco -= 5;
         }
     }
 
